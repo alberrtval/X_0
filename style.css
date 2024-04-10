@@ -12,7 +12,7 @@
 :root {
     --letters: #C04CFD;
     --background: #475B5A;
-    --winning_background: #5A7D7B;
+    --winning_background: #4b6665;
 }
 
 body {
@@ -76,4 +76,9 @@ button {
     color: var(--background);
     border-color: var(--letters);
     font-size: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
