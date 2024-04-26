@@ -17,40 +17,52 @@
 
 body {
     color: var(--letters);
-}
-
-h1 {
-    font-size: 54px;
-    text-transform: uppercase;
-}
-
-.container {
-    padding: 40px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--background);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    margin-left: 2rem;
 }
 
 #gameBoard {
-    width: 450px;
+    width: 80vw;
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 3vh;
 }
 
 .box {
-    height: 150px;
-    width: 150px;
+    width: 25vw;
+    height: 25vw;
+    max-height: 150px;
+    max-width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--letters);
-    font-size: 120px;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    font-size: 20vw;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
 }
 
 .box:nth-child(3n) {
@@ -70,15 +82,41 @@ h1 {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 1vw 3vw;
+    margin-right: 5vw;
     border-radius: 10px;
     background-color: var(--letters);
     color: var(--background);
     border-color: var(--letters);
-    font-size: 24px;
+    font-size: 5vw;
+    width: 30vw;
 }
 
 button:hover {
     cursor: pointer;
     transform: translateY(-2px);
+}
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        margin-left: 0;
+    }
+
+    h1 {
+        margin: 0;
+        margin-bottom: 2vh;
+        font-size: 4.5rem;
+    }
+
+    button {
+        margin: 0;
+        padding: 0.2rem 1.63rem;
+        font-size: 1.85rem;
+        width: 12rem;
+    }
+
+    .box {
+        font-size: 9rem;
+    }
 }

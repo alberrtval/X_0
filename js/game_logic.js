@@ -21,8 +21,8 @@ function boxClicked(e) {
         if (playerHasWon() !== false) {
             playerText.textContent = `${currentPlayer} Te vencio`;
             let winning_blocks = playerHasWon();
-
             winning_blocks.map(block => boxes[block].style.backgroundColor = winnerIndicator)
+            boxes.forEach(box => box.removeEventListener('click', boxClicked))
             return;
         }
         currentPlayer = currentPlayer == x_TEXT ? o_TEXT : x_TEXT;
@@ -58,6 +58,7 @@ function restart() {
     boxes.forEach(box => {
         box.innerText = '';
         box.style.backgroundColor = '';
+        box.addEventListener(`click`, boxClicked)
     })
 
     playerText.textContent = 'X_0';
