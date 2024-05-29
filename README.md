@@ -19,10 +19,10 @@ The Tic-Tac-Toe game is a fun and simple game for two players. The players take 
 ## Screenshot
 
 ### Mobile design:
-![Mobile design](mobile-design.png)
+<img src="https://github.com/alberrtval/X_0/blob/main/Design/Mobile_Design.png" alt="mobile-design" width="300">
 
 ### Desktop design:
-![Desktop design](desktop-design.png)
+<img src="https://github.com/alberrtval/X_0/blob/main/Design/Desktop_design.png" alt="desktop-design" width="500">
 
 ## Key Features
 
